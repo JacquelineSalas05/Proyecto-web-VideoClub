@@ -1,0 +1,478 @@
+html, body {
+  width: 100%;
+  height: 390px;
+  background: black ;
+  font-size:22px;
+  line-height: 32px;
+  word-wrap:break-word !important;
+  font-family: 'Open Sans', sans-serif;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+}
+
+/*video club*/
+.titulo{
+	margin: -30px;
+	padding-left: 50px;
+    font-size: 40px;
+	font-family: fantasy;
+	color: black;
+}
+
+/*AlquilerPeliculas*/
+.sub {
+
+	font-family: 'Courier New', Courier, monospace;
+	text-align: right;
+	color: white;
+	font-size: 25px;
+
+
+}
+
+.peliculas{
+	height: 500px;
+	text-align: center;
+}
+
+.peliculas p{
+	font-size: 30px;
+	color: white;
+	font-family: fantasy;
+	margin: 15px;
+
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	color: #FFF;
+}
+
+h3 a {
+	color: #FFF;
+}
+
+a {
+	color: #FFF;
+}
+
+h1 {
+	margin-top: 100px;
+	text-align:center;
+	line-height: 70px;
+	font-family: 'Bree Serif', 'serif';
+	}
+
+#container {
+	max-width: 100%;
+
+}
+
+p {
+	text-align: center;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+	text-align: left;
+	background-color: rgb(70, 69, 69);
+	height: 180px;
+	z-index: 99;
+	width: 100%;
+	z-index: 99;
+	text-align: center;
+
+
+}
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+	z-index: 99;
+}
+
+
+nav ul {
+	margin: -50px;
+	padding-left: 100px;
+	float: left;
+	list-style: none;
+	position: absolute;
+	z-index: 99;
+	text-align: center;
+	}
+
+
+	/*home categorias contacto*/
+nav ul li {
+	margin: -20px;
+	z-index: 99;
+	display:inline-block;
+	float:left;
+	background-color:rgb(70, 69, 69);
+	height: 60px;
+	width: 160px;
+	text-align: center;
+
+}
+
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;
+	color:white;
+	font-size:17px;
+	text-decoration:none;
+	z-index: 99;
+	width: 150px;
+	text-align: left;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+
+nav a:hover {
+	background-color: #000000;
+}
+
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 60px;
+	z-index: 99;
+}
+
+/* Accion, Comedia, Fantasia, Infantil, Terror*/
+nav ul li:hover > ul {
+	display:inherit;
+	margin: -1px;
+	padding: 0.1px;
+	z-index: 99;
+	width: 400px;
+}
+
+
+nav ul ul li {
+	width:150px;
+	float:none;
+	display:list-item;
+	position: relative;
+	z-index: 99;
+	text-align: center;
+}
+
+nav ul ul ul li {
+	position: relative;
+	top:30px;
+	left:170px;
+	z-index: 99;
+	text-align: center;
+	width: 100px;
+}
+
+
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+
+@media all and (max-width : 768px) {
+
+
+	nav {
+		margin: 0;
+	}
+
+	.toggle + a,
+
+	/*menu responsive */
+	.menu {
+		display: none;
+
+	}
+
+	.toggle {
+		display: block;
+		background-color: rgb(70, 69, 69);
+		padding:35px 50px;
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+		z-index: 99;
+		height: 20px;
+	}
+	a{
+		text-align: left;
+	}
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	nav ul li {
+		display: block;
+		width: 50%;
+		height: 45px;
+		z-index: 99;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+
+	nav ul li ul li .toggle,
+	nav ul ul a,
+     nav ul ul ul a{
+		padding:5px 5px;
+		color:#FFF;
+		font-size:17px;
+		z-index: 99;
+	}
+
+
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121;
+		z-index: 99;
+	}
+
+
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		z-index: 99;
+
+	}
+
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+		z-index: 99;
+	}
+
+
+	nav ul ul li {
+		display: block;
+		width: 100%;
+		z-index: 99;
+	}
+
+	nav ul ul ul li {
+		position: static;
+
+
+	}
+
+}
+
+@media all and (max-width : 330px)  {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+		height: 1000px;
+	}
+
+}
+.section{
+	color: white;
+}
+
+.jumbotron{
+  background: darkred;
+  color: black;
+  height: 10px;
+  text-align: left;
+  size: 5px;
+  width: 100%;
+  z-index: 99;
+}
+
+#carousel {
+  position: relative;
+  height: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  margin: -30px;
+}
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+#carousel div img {
+  width: 400px;
+  transition: width 1s;
+}
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  width: 200px;
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  width: 200px;
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+  width: 300px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 300px;
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+
+
+footer  .badge{
+  text-align: center;
+  background-color:darkred;
+  width: 100%;
+  color:black;
+  height: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+  float: left;
+
+}
+
+/*clase accion*/
+.accion  {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #FFF;
+text-align: center;
+
+}
+
+.comedia  {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #FFF;
+	text-align: center;
+
+}
+
+.fantasia  {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #FFF;
+	text-align: center;
+
+}
+
+.terror  {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #FFF;
+	text-align: center;
+
+}
+
+
+.infantil  {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #FFF;
+	text-align: center;
+
+}
+
+.contacto{
+
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #FFF;
+	text-align: center;
+}
+
+.contacto .info{
+    height:700px;
+    margin:  100px;
+    text-align: left;
+    width: 50%;
+}
+
+.enlace{
+	position: absolute;
+	width: 500px;
+	height: 250px;
+	background: rgb(70, 69, 69);
+	margin: -300px;
+	padding-left: 300px;
+}
+
+
+.info{
+
+	font-family: 'Bree Serif', 'serif';
+	color: #FFF;
+	text-align: left;
+	font-size: 20px;
+	padding-left: -50px;
+}
